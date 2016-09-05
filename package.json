@@ -1,0 +1,62 @@
+{
+    "nodejs": true, 
+    "additional_trust_anchors": "", 
+    "inject-js-end": "", 
+    "node-remote": "", 
+    "keywords": [], 
+    "author": "", 
+    "user-agent": "", 
+    "window": {
+        "fullscreen": true, 
+        "resizable": true, 
+        "title": "site", 
+        "always-on-top": false, 
+        "frame": true, 
+        "transparent": false, 
+        "height": 600, 
+        "exe_icon": "", 
+        "visible": true, 
+        "as_desktop": false, 
+        "position": "center", 
+        "show_in_taskbar": true, 
+        "mac_icon": "public/vesp-ico.png", 
+        "width": 1400, 
+        "toolbar": false, 
+        "icon": ""
+    }, 
+    "version": "1.0.0", 
+    "inject-js-start": "", 
+    "main": "public/index_.html", 
+    "chromium-args": "", 
+    "webexe_settings": {
+        "linux-x32": false, 
+        "windows-x64": false, 
+        "download_dir": "/Users/kushnir/Downloads/Web2Executable.app/Contents/Resources/files/downloads", 
+        "nw_compression_level": 5, 
+        "mac-x32": true, 
+        "windows-x32": false, 
+        "mac-x64": false, 
+        "nw_version": "0.11.6", 
+        "force_download": false, 
+        "linux-x64": false
+    }, 
+    "description": "vesper app", 
+    "dependencies": {
+        "jade": "^1.9.2", 
+        "express": "^4.12.0"
+    }, 
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    }, 
+    "webkit": {
+        "page-cache": false, 
+        "java": false, 
+        "plugin": false
+    }, 
+    "js-flags": "", 
+    "name": "vesper", 
+    "license": "ISC", 
+    "single-instance": true, 
+    "snapshot": "", 
+    "node-main": "main.js"
+}

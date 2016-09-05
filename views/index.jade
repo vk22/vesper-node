@@ -1,0 +1,73 @@
+doctype
+head
+	title= vesper
+	meta(charset='utf-8')
+	link(rel='stylesheet' href='/css/styles.css')
+	script(src="/js/jquery-2.1.0.min.js")
+	script(src="/js/jquery.isotope.min.js")
+	script(src="/js/jquery.transit.min.js")
+	script(src="/js/jquery.ba-bbq.min.js")
+	script(src="/js/myisotope.js")
+
+body
+	#wrap
+	.left-col.index
+		header
+			.logo
+				a
+				img(src= "img/vesp_logo.png")
+					
+			nav
+				ul
+					each val, index in menuObj
+						li: a(href=val)= index
+
+
+	.right-col.index
+		.project-filter
+			ul(id='filters' class='option-set' data-option-key='filter')   
+				li(class='all')
+					a(href='#filter=*' class='selected') Все проекты
+				li
+					a(href='#filter=.this') Текущие	
+				li
+					a(href='#filter=.future') В развитии	
+				li
+					a(href='#filter=.past') Реализованные														
+
+		#container  
+			.project-list
+				ul
+					li(class='element this')
+						a(href='project') 
+							img(src= "img/project-index-nikolas.png")
+							.title St. Nickolas
+							.subtitle Никольская 10/2
+					li(class='element future')
+						a(href='project.html') 
+							img(src= "img/project-index-nikolas.png")
+							.title St. Nickolas
+							.subtitle Никольская 10/2
+					li(class='element this')
+						a(href='project.html') 
+							img(src= "img/project-index-nikolas.png")
+							.title St. Nickolas
+							.subtitle Никольская 10/2
+					li(class='element future')
+						a(href='project.html') 
+							img(src= "img/project-index-nikolas.png")
+							.title St. Nickolas
+							.subtitle Никольская 10/2
+					li(class='element past')
+						a(href='project.html') 
+							img(src= "img/project-index-nikolas.png")
+							.title St. Nickolas
+							.subtitle Никольская 10/2	
+					li(class='element past')
+						a(href='project.html') 
+							img(src= "img/project-index-nikolas.png")
+							.title St. Nickolas
+							.subtitle Никольская 10/2																																				
+						
+
+

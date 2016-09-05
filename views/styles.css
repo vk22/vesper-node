@@ -1,0 +1,612 @@
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  font-size: 1em;
+  line-height: 1.4; 
+  -webkit-font-smoothing: antialiased;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box;
+}
+
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #626571;
+  margin: 1.5em 0;
+  padding: 0;
+  width: 15px;
+}
+
+img {
+  vertical-align: middle;
+  width: 100%;
+  max-width: 100%;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+textarea {
+  resize: vertical; }
+
+ul, li {
+  list-style: none;
+}
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
+
+body {
+  background: #464e54;
+  color: #ebebeb;
+  font: 13px/17px 'Open Sans', Arial, sans-serif; 
+}
+
+
+h1, h2, h3, p {
+  font-size: 12px;
+  color: #ebebeb;
+  font-weight: normal;
+  padding: 0;
+  margin: 0; 
+}
+
+p {
+  font-size: 12px;
+  line-height: 1.75em;
+}
+
+
+a {
+  color: #fff;
+  text-decoration: none; }
+  a:hover {
+    color: white; 
+  }
+
+ul {
+  margin: 0;
+  padding: 0; 
+}  
+
+
+#wrap {
+  width: 100%;
+  height: 100%;
+  /*overflow: hidden;*/
+  position: relative; 
+}
+
+.left-col, .center-col, .right-col {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+.left-col, .right-col {
+  width: 15%;
+}
+
+.left-col {
+  left: 0;
+  border-right: 1px solid #626571;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  -webkit-transition: all 0.2s ease;
+}
+
+.right-col {
+  left: 15%;
+  width: 85%;
+}
+
+.right-col.index {
+  padding-left: 20px;
+}
+
+.main-side {
+  position: relative;
+  float: left;
+  width: 75%;
+  height: 100%;
+  border-right: 1px solid #626571;
+}
+
+.right-side {
+  float: left;
+  width: 25%;
+
+}
+
+.main-side.big {
+  float: left;
+  width: 80%;
+  border-right: none;
+}
+
+.right-side.small {
+  float: left;
+  width: 20%;
+}
+
+
+.main-side.small {
+  float: left;
+  width: 70%;
+  /*border-right: 1px solid #626571;*/
+}
+
+
+.right-side.big {
+  float: left;
+  width: 30%;
+}
+
+.main-side.full {
+  float: left;
+  width: 100%;
+  border-right: none;
+}
+.btn-navbar-toggle {
+  background: #464e54;
+  position: absolute;
+  right: -78px;
+  top: 26px;
+  border: 1px solid #626571;
+  cursor: pointer;
+  display: none;
+}
+
+.left-col.index .logo {
+  text-align: center;
+  width: 70px;
+  margin: 30px auto 40px;
+}
+
+.left-col.index nav {
+  text-align: center;
+}
+
+.left-col.index nav li{
+  padding: 10px 20px;
+}
+
+.left-col.index nav li a{
+  text-transform: uppercase;
+}
+
+.left-col .logo {
+  text-align: center;
+  width: 170px;
+  margin: 30px auto 40px;
+}
+
+.left-col .logo-button {
+  position: absolute;
+  bottom: 20px;
+  width: 60px;
+  left: 50%;
+  margin-left: -30px;
+}
+
+.left-col .logo-button img {
+  width: 100%;
+}
+
+.left-col nav {
+  text-align: left;
+}
+
+.left-col nav li{
+  padding: 10px 20px;
+}
+
+.left-col nav li.active {
+  background: #3d454a;
+}
+
+.left-col nav li a{
+  text-transform: uppercase;
+}
+
+.project-filter {
+  float: left;
+  width: 100%;
+  margin-bottom: 35px;
+  padding-top: 110px;
+}
+
+.project-filter li {
+  float: left;
+  margin-right: 20px;
+}
+
+.project-filter li a {
+  border-bottom: 2px solid #a44f29;
+  line-height: 15px;
+  padding-bottom: 2px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.project-filter li a.selected {
+  border-bottom: none;
+
+}
+
+
+.project-filter li a:hover {
+  border-bottom: none;
+}
+
+#container {
+  position: relative;
+  width: 100%;
+}
+
+.project-list li {
+  float: left;
+  margin: 0 10px 30px 0;
+  width: 200px;
+  height: 206px;
+  text-align: center;
+}
+
+.project-list li .title{
+  text-transform: uppercase;
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+/* Проект */
+
+.project-main-gal {
+  margin-bottom: 20px;
+}
+
+
+.project-main-text {
+  padding: 0 20px 20px;
+  -webkit-column-count: 2;
+  -webkit-column-width: 40%;
+
+}
+
+.right-side-text {
+   text-transform: uppercase;
+   padding: 110px 20px 0;
+ }
+
+.right-side-text a {
+  border-bottom: 2px solid #a44f29;
+  line-height: 15px;
+  padding-bottom: 2px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.right-side-text a:hover {
+  border-bottom: none;
+  line-height: 15px;
+  padding-bottom: 2px;
+}
+
+.right-side-text .active a {
+  border-bottom: none;
+}
+
+.right-side-text h1 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.right-side-text li {
+  margin-bottom: 20px;
+}
+
+.right-side-text p {
+  text-transform: none;
+  margin-bottom: 15px;
+}
+
+.scroll-pane {
+  width: 100%;
+  height: 150px;
+  overflow: auto;
+}
+
+/* Планировки */
+
+#fasad {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 0!important;
+  padding-top: 5%!important;
+
+}
+
+.toolTipFloorInfo {
+    position: absolute;
+    z-index: 999;
+    display: none;
+    padding-top: 10px;
+    width: 150px;
+    height: 86px;
+    background: url('../img/toolTipFloor.png') no-repeat center center;
+    color: #fff;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.toolTipFloorInfo h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.toolTipFloorInfo p {
+    font-size: 11px;
+    line-height: 1.25em;
+
+}
+
+
+.toolTipFloorInfo i {
+    color: #D89983;
+    font-size: 11px;
+}
+
+
+
+.toolTipFloorInfo.onFasad {
+    padding-top: 15px;
+    width: 110px;
+    height: 71px;
+    background: url('../img/toolTipFasad.png') no-repeat center center;
+}
+
+
+.main-side.plans {
+  background: #fff;
+}
+
+.main-side.plans .fasad, .main-side.plans .floors {
+  margin-top: 13%;
+}
+
+.main-side .apart-scheme {
+  margin-top: 10%;
+}
+
+.aparts img {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.apart-data {
+  padding-top: 20px;
+}
+
+.apart-data h1 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.apart-data h2 {
+  text-transform: none;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.apart-data h3 {
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 25px;
+  background: #868a8e;
+  padding: 2px 5px;
+  display: inline-block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+#apart-data-table td {
+  border: 1px solid #626571;
+  padding: 10px 15px;
+}
+
+.btn-back {
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 25px;
+  background: #868a8e;
+  padding: 2px 5px;
+}
+
+.btn-back a {
+  cursor: pointer;
+}
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.3s;
+     -moz-transition-duration: 0.3s;
+      -ms-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+
+
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+     -moz-transition: none;
+      -ms-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+
+.element {
+  overflow: hidden;
+  position: relative;
+  cursor: default;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+.text-full {
+  margin-top: 12%;
+}
+
+.text-detail-col {
+  width: 45%;
+  float: left;
+  padding: 0 30px;
+}
+
+.text-team-col {
+  width: 75%;
+  float: left;
+  padding: 0 30px;
+}
+
+.text-full ul {
+  margin-bottom: 20px;
+}
+
+.text-full ul li{
+  margin-bottom: 5px;
+  line-height: 18px;
+}
+
+.text-full ul li.title{
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .btn-navbar-toggle {
+    display: block;
+  }
+
+  .left-col {
+    left: -195px;
+    border-right: 1px solid #626571;
+    width: 195px;
+    background: #464e54;
+  }
+
+  .right-col {
+    left: 0px;
+    width: 100%;
+  }
+
+  .main-side {
+    float: left;
+    display: block;
+    width: 100%;
+
+    /*border-right: 1px solid #626571;*/
+  }
+
+  .right-side {
+    float: left;
+    display: block;
+    width: 100%;
+
+  }
+
+}

@@ -1,0 +1,65 @@
+doctype
+head
+	title= vesper
+	meta(charset='utf-8')
+	link(rel='stylesheet' href='/css/styles.css')
+	script(src="/js/jquery-2.1.0.min.js")
+	script(src="/js/jquery.isotope.min.js")
+	script(src="/js/jquery.transit.min.js")
+	script(src="/js/jquery.ba-bbq.min.js")
+	script(src="/js/myisotope.js")
+
+body
+	#wrap
+	.left-col.index
+		header
+			.logo
+				a
+				img(src= "img/vesp_logo.png")
+					
+			nav
+				ul
+					each val, index in menuObj
+						li: a(href=val)= index
+	
+	.right-col.index
+		if (page=="about")
+			.about-text 
+				p(class='big')= content1
+				p= content2
+			.about-img
+				img(src= img)
+
+		if (page=="partners")
+			.about-text 
+				
+				p(class='big')= content1
+				p= link
+				ul
+					each val in partnersList
+						li
+							p= val
+
+		if (page=="video")
+			.about-text 
+				p(class='big')= content1
+				p= link
+		if (page=="contacts")
+			.about-text 
+				p(class='big')= content1
+				p= link	
+			.about-img
+				img(src= img)							
+
+					
+
+
+
+
+			
+
+
+
+					
+
+
